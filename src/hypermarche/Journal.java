@@ -4,15 +4,15 @@ import java.util.TreeSet;
 
 public class Journal {
 	private TreeSet<Evenement> evenementsSet;
-	private static Journal singleton = new Journal();
+//	private static Journal singleton = new Journal();
 	
-	private Journal() {
+	public Journal() {
 		this.evenementsSet = new TreeSet<>();
 	}
 	
-	public static Journal getSingleton() {
-		return singleton;
-	}
+//	public static Journal getSingleton() {
+//		return singleton;
+//	}
 	
 	public boolean ajouter(Evenement evenement) {
 		return evenementsSet.add(evenement);
