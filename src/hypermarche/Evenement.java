@@ -2,9 +2,11 @@ package hypermarche;
 
 public abstract class Evenement implements Comparable<Evenement>{
 	protected int date;
+	protected Magasin magasin;
 	
-	public Evenement(int date) {
+	public Evenement(int date, Magasin magasin) {
 		this.date = date;
+		this.magasin = magasin;
 	}
 	
 	abstract void execute();
@@ -15,6 +17,6 @@ public abstract class Evenement implements Comparable<Evenement>{
 	}
 
 	public String toString() {
-		return "" + date;
+		return "Magasin : " + magasin + " date : " + date;
 	}
 }
