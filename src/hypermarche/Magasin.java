@@ -21,6 +21,10 @@ public class Magasin {
 		return listeClients.remove(client);
 	}
 
+	public Journal getJournal() {
+		return journal;
+	}
+
 	public String toString() {
 	    return nom;
     }
