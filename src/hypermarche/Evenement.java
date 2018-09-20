@@ -13,6 +13,9 @@ public abstract class Evenement implements Comparable<Evenement>{
 
 	@Override
 	public int compareTo(Evenement o) {
+		if (( this.date - o.date == 0 ) && this.hashCode() == o.hashCode()) {
+			return 0;
+		}
 		return (this.date - o.date);
 	}
 
