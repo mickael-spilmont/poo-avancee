@@ -2,6 +2,11 @@ package hypermarche;
 
 import java.util.ArrayList;
 
+/**
+ * Cette classe simule un magasin, elle contiens une référence au journal et une arraylist de client
+ * @author Mickael Spilmont
+ *
+ */
 public class Magasin {
 	private String nom;
 	private Journal journal;
@@ -28,6 +33,4 @@ public class Magasin {
 	public String toString() {
 	    return nom;
     }
-	
-//	public int effect
 }

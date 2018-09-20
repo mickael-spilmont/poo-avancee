@@ -25,4 +25,8 @@ public class Journal {
 	public Evenement retirer() {
 		return evenementsSet.pollFirst();
 	}
+
+	public TreeSet<Evenement> getEvenementsSet() {
+		return evenementsSet;
+	}
 }

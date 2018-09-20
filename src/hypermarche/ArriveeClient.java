@@ -2,7 +2,7 @@ package hypermarche;
 
 /**
  * Classe d'evenement qui simule l'arrivé d'un client, c'est elle qui génère le nouveau client
- * @author spilmonm
+ * @author Mickael Spilmont
  *
  */
 public class ArriveeClient extends Evenement {
@@ -15,18 +15,15 @@ public class ArriveeClient extends Evenement {
      */
     public ArriveeClient(int date, Magasin magasin) {
         super(date, magasin);
-        this.client = new Client(magasin, date);
     }
 
-    public Client getClient() {
-		return client;
-	}
-
 	public void execute() {
-        // Todo
+		this.client = new Client(magasin, date);
+		magasin.ajouterClient(client);
+		System.out.println(this.toString());
     }
 
     public String toString() {
-        return super.toString() + "\nArrivée du client " + client + "\n";
+        return super.toString() + "\nArrivée du client " + client.hashCode() + "\n";
     }
 }

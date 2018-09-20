@@ -1,10 +1,8 @@
 package hypermarche;
 
-import java.util.Random;
-
 /**
  * Génèrateur d'événement qui rempli le journal avec des evenements
- * @author spilmonm
+ * @author Mickael Spilmont
  *
  */
 public class GenerateurEvenements {
